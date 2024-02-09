@@ -1,0 +1,237 @@
+/* Reset some basic elements */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Body and Font Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin-left: 21%;
+    margin-right: 21%;
+}
+
+
+
+
+
+/* Cabeçalho da página */
+.top-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* This ensures items are vertically centered */
+    margin-top: 43px;
+    padding: 14px 40px 14px 12px; /* Add some padding on both sides */
+    height: 73px;
+    background: #3e60dd;
+}
+
+.logo h2 {
+    margin: 0; /* Ensures there's no default margin */
+}
+
+/* Logo do cabeçalho */
+.logo img {
+    max-height: 73px;
+    width: auto; /* Adjusts width to maintain aspect ratio */
+    object-fit: contain; /* Ensures the image fits without distorting */
+    display: block; /* Removes any default inline spacing */
+}
+
+/* Ícones das redes sociais */
+.fa {
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    background: white;
+    color: #3e60dd;
+}
+
+.fa:hover {
+    background: #3e60dd;
+    color: white;
+}
+
+
+/* Configurações de texto */
+h1 {
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Seções */
+.section-container {
+    display: flex;
+    border: 2px solid black;
+    min-height: 600px;
+}
+
+/* SEÇÃO 1 */
+/* Hero */
+.hero {
+    background: #3e60dd;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 14px 12px;
+}
+
+/* Texto do hero */
+.hero-text {
+    margin: 88px 0 0 0;
+    flex: 0 0 57%;
+    padding: 0 12px;
+}
+
+.hero-text h1, .hero-text p {
+    text-align: left;
+}
+
+/* Imagem do hero */
+.hero img {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    padding: 63px 12px;
+}
+
+
+/* SEÇÃO 2 */
+/* Video */
+.video-container {
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 13%;
+    width: 100%;
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.29%; /* The height of the item will now be 56.25% of the width. */
+}
+
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border: #3e60dd 2px solid;
+}
+
+
+
+/* SEÇÃO 2 */
+/* Features */
+.features {
+    background: #3e60dd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px 80px;
+}
+
+.features .textbox {
+    padding: 14px 50px;
+}
+
+.features .feature-list {
+    padding: 0px 95px;
+}
+
+.features .feature-list .list-point {
+    align-items: center;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 50px;
+}
+
+.features .feature-list .list-point p {
+    margin: 0 0 0 20px;
+}
+
+
+
+
+
+/* Features Styles */
+#features {
+    padding: 2rem 0;
+}
+
+/* Testimonials Styles */
+#testimonials {
+    background: #f1f1f1;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* CTA Styles */
+#cta {
+    background: #28a745;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Footer Styles */
+footer {
+    background: #343a40;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+/* Additional classes for layout and typography can be added as needed. */
+
+
+
+
+
+
+
+
+
+
+/* Style for each list item to ensure proper spacing */
+.menu {
+    align-items: center; /* Adds spacing between icons */
+    vertical-align: middle;
+}
+
+/* Horizontal list for the menu */
+.menu ul {
+    list-style-type: none; /* Removes bullet points */
+    display: flex; /* Displays the list items inline */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+}
+
+/* Style for each list item to ensure proper spacing */
+.menu ul li {
+    margin-left: 10px; /* Adds spacing between icons */
+}

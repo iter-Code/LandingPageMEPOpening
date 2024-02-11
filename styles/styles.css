@@ -7,17 +7,36 @@ body, h1, h2, h3, p {
     font-family: 'Overpass Mono', monospace;
 }
 
-
-
 /* Body and Font Styles */
 body {
-    font-family: Arial, sans-serif;
     line-height: 1.6;
     margin-left: 21%;
     margin-right: 21%;
 }
 
+/* Medium screens (tablets, etc.) */
+@media (max-width: 768px) {
+    body {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
 
+/* Small screens (large phones, 600px and below) */
+@media (max-width: 600px) {
+    body {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+/* Extra small screens (small phones, 400px and below) */
+@media (max-width: 400px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+}
 
 
 
@@ -25,10 +44,10 @@ body {
 .top-navigation {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* This ensures items are vertically centered */
+    align-items: center;
     margin-top: 2.7rem;
     padding: 14px 40px 14px 12px; /* Add some padding on both sides */
-    height: 73px;
+    height: 4.5rem;
     background: #3e60dd;
 }
 
@@ -39,41 +58,53 @@ body {
 /* Logo do cabeçalho */
 .logo img {
     max-height: 73px;
-    height: 5rem;
-    width: auto; /* Adjusts width to maintain aspect ratio */
-    object-fit: contain; /* Ensures the image fits without distorting */
+    height: auto;
+    width: auto;
+    object-fit: contain;
     display: block; /* Removes any default inline spacing */
 }
 
 /* Ícones das redes sociais */
-/* .social-media-icon {
-    width: 45px;
-    height: 45px;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 50%;
-    background: white;
-    color: #3e60dd;
-} */
-
 .social-media-icons ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    margin: 14px 2rem 14px 2.5rem;
+    margin: 0 0 0 2.5rem;
     padding: 0;
 }
 
-.social-media-icons ul li img {
-    margin: 0 14px 0 0;
-    background: #3e60dd;
-    color: white;
+.social-media-icons li {
+    margin-right: 10px; /* Adjust spacing between icons as needed */
+    padding: 0;
+    height: 50px;
+}
+
+.social-media-icons a {
+    display: inline-block; /* Allows setting width and height */
+    width: 50px; /* Set to desired width */
+    height: 50px; /* Set to desired height */
+    position: relative; /* Positions the anchor as a reference point for the image */
+    overflow: hidden; /* Ensures nothing extends beyond the anchor's bounds */
+}
+
+.social-media-icons img {
+    display: block; /* Removes any default inline spacing */
+    width: 100%; /* Makes image fill the anchor */
+    height: 100%; /* Makes image fill the anchor */
+    object-fit: cover; /* Ensures image covers the space without distortion */
 }
 
 .social-media-icons ul li:hover {
     background: white;
     color: #3e60dd;
 }
+
+
+
+
+
+
+
 
 
 /* Configurações de texto */
@@ -194,7 +225,7 @@ p {
 
 /* SEÇÃO 3 */
 /* Carousel */
-@keyframes tonext {
+/* @keyframes tonext {
     75% {
       left: 0;
     }
@@ -248,7 +279,7 @@ p {
   
   * {
     box-sizing: border-box;
-    scrollbar-color: transparent transparent; /* thumb and track color */
+    scrollbar-color: transparent transparent;
     scrollbar-width: 0px;
   }
   
@@ -421,9 +452,10 @@ p {
   
   .carousel::after {
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolygon points='100,50 20,100 20,0' fill='%23fff'/%3E%3C/svg%3E");
-  }
+  } */
 
 
+/* About section */
 .section-container .about-itercode {
     background: white;
     display: flex;
@@ -455,21 +487,4 @@ footer {
 
 
 
-/* Style for each list item to ensure proper spacing */
-.menu {
-    align-items: center; /* Adds spacing between icons */
-    vertical-align: middle;
-}
 
-/* Horizontal list for the menu */
-.menu ul {
-    list-style-type: none; /* Removes bullet points */
-    display: flex; /* Displays the list items inline */
-    padding: 0; /* Removes default padding */
-    margin: 0; /* Removes default margin */
-}
-
-/* Style for each list item to ensure proper spacing */
-.menu ul li {
-    margin-left: 10px; /* Adds spacing between icons */
-}

@@ -48,7 +48,7 @@ p {
 }
 
 /* Janela menor no desktop */
-@media (max-width: 1200px) {
+@media (max-width: 1300px) {
     .section-container-transparent, .section-container-blue {
         padding-left: 15%;
         padding-right: 15%;
@@ -197,13 +197,25 @@ p {
 /* Imagem do hero */
 .hero img {
     height: auto;
-    width: 20px;
     display: flex;
     justify-content: space-between;
     align-items: top;
     padding: 63px 12px;
 }
 
+/* Hide .hero img on screens smaller than 1200px */
+@media (max-width: 1300px) {
+    .hero-text {
+        margin: 44px 0 0 0;
+        /* flex: 0 0 57%; */
+        padding: 0 12px;
+        width: 100%;
+    }
+
+    .hero img {
+        display: none;
+    }
+}
 
 /* ===================================================== */
 

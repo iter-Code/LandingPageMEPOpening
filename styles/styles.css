@@ -1,58 +1,110 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
-/* Reset some basic elements */
+@font-face {
+    font-family: 'Univers-Condensed';
+    src: url('fonts/univers-47-condensedlight-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Univers-Condensed';
+    src: url('fonts//UniversLTStd-LightCn\ TTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Reset de alguns elementos básicos */
 body, h1, h2, h3, p {
     margin: 0;
     padding: 0;
+
+}
+
+/* Configurações de texto */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
     font-family: 'Overpass Mono', monospace;
 }
 
-/* Body and Font Styles */
-body {
-    line-height: 1.6;
-    margin-left: 21%;
-    margin-right: 21%;
+p {
+    font-size: 1.8em;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Univers-Condensed', sans-serif;
 }
 
-/* Medium screens (tablets, etc.) */
+/* Styles do body e das fontes */
+.section-container-transparent, .section-container-blue {
+    line-height: 1.2;
+    padding-left: 21%;
+    padding-right: 21%;
+}
+
+/* Janela menor no desktop */
+@media (max-width: 1200px) {
+    .section-container-transparent, .section-container-blue {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+}
+
+/* Tamanho de tela médio (tablets, etc.) */
 @media (max-width: 768px) {
-    body {
-        margin-left: 10%;
-        margin-right: 10%;
+    .section-container-transparent, .section-container-blue {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }
 
-/* Small screens (large phones, 600px and below) */
+/* Tamanho de tela pequeno (celulares largos, <= 600px) */
 @media (max-width: 600px) {
-    body {
-        margin-left: 5%;
-        margin-right: 5%;
+    .section-container-transparent, .section-container-blue {
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
 
-/* Extra small screens (small phones, 400px and below) */
+/* Tamanho de tela extra pequeno (celulares pequenos, <= 400px) */
 @media (max-width: 400px) {
-    body {
-        margin-left: 2%;
-        margin-right: 2%;
+    .section-container-transparent, .section-container-blue {
+        padding-left: 2%;
+        padding-right: 2%;
     }
 }
 
 
+/* Seções */
+.section-container-transparent, .section-container-blue {
+    display: flex;
+    border: 2px solid black;
+}
 
+.section-container-blue {
+    background: #3e60dd;
+}
+
+
+/* ===================================================== */
+
+
+/* SEÇÃO 1 */
 /* Cabeçalho da página */
 .top-navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 2.7rem;
-    padding: 14px 40px 14px 12px; /* Add some padding on both sides */
+    padding: 14px 12px 14px 12px;
     height: 4.5rem;
     background: #3e60dd;
-}
-
-.logo h2 {
-    margin: 0; /* Ensures there's no default margin */
+    width: 100%;
 }
 
 /* Logo do cabeçalho */
@@ -61,7 +113,7 @@ body {
     height: auto;
     width: auto;
     object-fit: contain;
-    display: block; /* Removes any default inline spacing */
+    display: block;
 }
 
 /* Ícones das redes sociais */
@@ -100,46 +152,32 @@ body {
 }
 
 
+/* Para mobile */
+@media (max-width: 600px) {
+    .top-navigation {
+        margin: 22px 0 0 0;
+        flex-direction: column; /* Stack items vertically */
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        height: auto; /* Allow the header to grow as needed */
+    }
 
-
-
-
-
-
-
-/* Configurações de texto */
-h1 {
-    font-size: 2.5em;
-    margin: 0;
-    padding: 0;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-}
-
-p {
-    font-size: 1.2em;
-    margin: 0;
-    padding: 0;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
+    .social-media-icons ul {
+        flex-direction: row; /* Keeps icons in a row */
+        justify-content: center; /* Center the icons row */
+        margin: 14px 0 0 0; /* Add some space above and below the icons list */
+    }
 }
 
 
-/* Seções */
-.section-container {
-    display: flex;
-    border: 2px solid black;
-    min-height: 600px;
-}
+/* ===================================================== */
 
-/* SEÇÃO 1 */
+
+/* SEÇÃO 2 */
 /* Hero */
 .hero {
-    background: #3e60dd;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: top;
     padding: 14px 12px;
 }
@@ -147,8 +185,9 @@ p {
 /* Texto do hero */
 .hero-text {
     margin: 88px 0 0 0;
-    flex: 0 0 57%;
+    /* flex: 0 0 57%; */
     padding: 0 12px;
+    width: 100%;
 }
 
 .hero-text h1, .hero-text p {
@@ -157,11 +196,16 @@ p {
 
 /* Imagem do hero */
 .hero img {
+    height: auto;
+    width: 20px;
     display: flex;
     justify-content: space-between;
     align-items: top;
     padding: 63px 12px;
 }
+
+
+/* ===================================================== */
 
 
 /* SEÇÃO 2 */

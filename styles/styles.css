@@ -49,8 +49,18 @@ body, h1, p {
 }
 
 /* Configurações de texto */
-h1, p, .button-text {
+h1, p {
   color: white;
+}
+
+.button-text-blue {
+  color: white;
+  background-color: var(--itercode-blue);
+}
+
+.button-text-white {
+  color: var(--itercode-blue);
+  background-color: white;
 }
 
 h1 {
@@ -68,7 +78,7 @@ p {
   margin-top: 20px;
 }
 
-.button-text {
+.button-text-blue, .button-text-white {
   font-family: 'Overpass Mono', monospace;
   font-size: 2.1rem;
   font-weight: 400;
@@ -114,7 +124,7 @@ p {
     margin-top: 30px;
   }
 
-  .button-text {
+  .button-text-blue, .button-text-white {
     font-family: 'Overpass Mono', monospace;
     font-size: 1.4em;
     font-weight: 400;
@@ -703,7 +713,83 @@ p {
 /* SEÇÃO 7 */
 /* Call to test */
 .call-to-test {
-  height: 600px;
+  display: flex;
+  padding: 14px 12px;
+}
+
+/* Texto do hero */
+.call-text {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 63px 12px;
+}
+
+.call-text h1, .call-text p {
+  text-align: left;
+}
+
+.call-image {
+  display: flex;
+  justify-content: center;
+}
+
+.call-image img {
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  padding: 63px 12px;
+  height: auto;
+  width: 16vw;
+}
+
+.call-to-test button {
+  margin: 42px 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 44px 12px;
+  border-radius: 16px;
+  box-shadow: none;
+  width: 60%;
+  border: none;
+  height: auto;
+  background-color: white;
+}
+
+.call-to-test button p {
+  text-align: center;
+}
+  
+  
+  
+@media (max-width: 1300px) {
+  .call-to-test {
+    flex-direction: column;
+    
+  }
+
+  .call-text {
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+
+  .call-text h1, .call-text p {
+    text-align: center;
+  }
+
+  .call-image img {
+    padding: 32px 0 32px 0;
+    width: 40%;
+  }
+
+  .call-to-test button {
+    padding: 22px 12px;
+    width: 70%;
+  }
 }
 
 
@@ -716,7 +802,7 @@ p {
   flex-direction: column;
   align-items: left;
   padding: 14px 80px;
-  margin: 48px 0;
+  margin: 56px 0 48px 0;
 }
 
 .about-itercode h1, .about-itercode p {
@@ -725,7 +811,7 @@ p {
 }
 
 .about-itercode h1 {
-  margin: 0 0 28px 0;
+  margin: 0 0 22px 0;
 }
 
 .about-itercode p {
@@ -737,6 +823,10 @@ p {
     align-items: center;
     padding: 14px 40px;
     margin: 48px 0;
+  }
+
+  .about-itercode h1 {
+    margin: 0;
   }
 }
 

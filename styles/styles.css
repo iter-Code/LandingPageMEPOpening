@@ -1,96 +1,103 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono&display=swap');
 
 @font-face {
-    font-family: 'Univers-Condensed';
-    src: url('fonts/univers-47-condensedlight-bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Univers-Condensed';
+  src: url('fonts/univers-47-condensedlight-bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Univers-Condensed';
-    src: url('fonts//UniversLTStd-LightCn\ TTF.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Univers-Condensed';
+  src: url('fonts//UniversLTStd-LightCn\ TTF.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* Reset de alguns elementos básicos */
 body, h1, h2, h3, p {
-    margin: 0;
-    padding: 0;
-
+  margin: 0;
+  padding: 0;
 }
 
 /* Configurações de texto */
 h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Overpass Mono', monospace;
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Overpass Mono', monospace;
 }
 
 p {
-    font-size: 1.8em;
-    font-weight: 500;
-    color: white;
-    text-align: center;
-    margin-top: 20px;
-    font-family: 'Univers-Condensed', sans-serif;
+  font-size: 1.8em;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  font-family: 'Univers-Condensed', sans-serif;
 }
 
 /* Styles do body e das fontes */
-.section-container-transparent, .section-container-blue {
-    line-height: 1.2;
-    padding-left: 21%;
-    padding-right: 21%;
+.section-container-transparent, .section-container-blue, .section-container-about {
+  line-height: 1.2;
+  padding-left: 21%;
+  padding-right: 21%;
 }
 
 /* Janela menor no desktop */
 @media (max-width: 1300px) {
-    .section-container-transparent, .section-container-blue {
-        padding-left: 15%;
-        padding-right: 15%;
-    }
+  .section-container-transparent, .section-container-blue, .section-container-about {
+    padding-left: 15%;
+    padding-right: 15%;
+  }
 }
 
 /* Tamanho de tela médio (tablets, etc.) */
 @media (max-width: 768px) {
-    .section-container-transparent, .section-container-blue {
-        line-height: 1.1;
-        padding-left: 10%;
-        padding-right: 10%;
-    }
+  .section-container-transparent, .section-container-blue, .section-container-about {
+    line-height: 1.1;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 /* Tamanho de tela pequeno (celulares largos, <= 600px) */
 @media (max-width: 600px) {
-    .section-container-transparent, .section-container-blue {
-        line-height: 1.1;
-        padding-left: 5%;
-        padding-right: 5%;
-    }
+  .section-container-transparent, .section-container-blue, .section-container-about {
+    line-height: 1.1;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
 }
 
 /* Tamanho de tela extra pequeno (celulares pequenos, <= 400px) */
 @media (max-width: 400px) {
-    .section-container-transparent, .section-container-blue {
-        line-height: 1.1;
-        padding-left: 2%;
-        padding-right: 2%;
-    }
+  .section-container-transparent, .section-container-blue, .section-container-about {
+    line-height: 1.1;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
 }
 
 
 /* Seções */
-.section-container-transparent, .section-container-blue {
-    display: flex;
-    border: 2px solid black;
+.section-container-transparent, .section-container-blue, .section-container-about {
+  display: flex;
+  border: 2px solid black;
 }
 
 .section-container-blue {
-    background: #3e60dd;
+  background: #3e60dd;
+}
+
+.section-container-about {
+  background-image: url('../images/background-about.png');
+  background-repeat: no-repeat;
+  background-size: 145%;
+  background-position: center;
+  background-clip:unset;
 }
 
 
@@ -100,76 +107,76 @@ p {
 /* SEÇÃO 1 */
 /* Cabeçalho da página */
 .top-navigation {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 2.7rem;
-    padding: 14px 12px 14px 12px;
-    height: 4.5rem;
-    background: #3e60dd;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2.7rem;
+  padding: 14px 12px 14px 12px;
+  height: 4.5rem;
+  background: #3e60dd;
+  width: 100%;
 }
 
 /* Logo do cabeçalho */
 .logo img {
-    max-height: 73px;
-    height: auto;
-    width: auto;
-    object-fit: contain;
-    display: block;
+  max-height: 73px;
+  height: auto;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 /* Ícones das redes sociais */
 .social-media-icons ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0 0 0 2.5rem;
-    padding: 0;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0 0 0 2.5rem;
+  padding: 0;
 }
 
 .social-media-icons li {
-    margin-right: 10px; /* Adjust spacing between icons as needed */
-    padding: 0;
-    height: 50px;
+  margin-right: 10px; /* Adjust spacing between icons as needed */
+  padding: 0;
+  height: 50px;
 }
 
 .social-media-icons a {
-    display: inline-block; /* Allows setting width and height */
-    width: 50px; /* Set to desired width */
-    height: 50px; /* Set to desired height */
-    position: relative; /* Positions the anchor as a reference point for the image */
-    overflow: hidden; /* Ensures nothing extends beyond the anchor's bounds */
+  display: inline-block; /* Allows setting width and height */
+  width: 50px; /* Set to desired width */
+  height: 50px; /* Set to desired height */
+  position: relative; /* Positions the anchor as a reference point for the image */
+  overflow: hidden; /* Ensures nothing extends beyond the anchor's bounds */
 }
 
 .social-media-icons img {
-    display: block; /* Removes any default inline spacing */
-    width: 100%; /* Makes image fill the anchor */
-    height: 100%; /* Makes image fill the anchor */
-    object-fit: cover; /* Ensures image covers the space without distortion */
+  display: block; /* Removes any default inline spacing */
+  width: 100%; /* Makes image fill the anchor */
+  height: 100%; /* Makes image fill the anchor */
+  object-fit: cover; /* Ensures image covers the space without distortion */
 }
 
 .social-media-icons ul li:hover {
-    background: white;
-    color: #3e60dd;
+  background: white;
+  color: #3e60dd;
 }
 
 
 /* Para mobile */
 @media (max-width: 600px) {
-    .top-navigation {
-        margin: 22px 0 0 0;
-        flex-direction: column; /* Stack items vertically */
-        justify-content: center; /* Center items vertically */
-        align-items: center; /* Center items horizontally */
-        height: auto; /* Allow the header to grow as needed */
-    }
+  .top-navigation {
+    margin: 22px 0 0 0;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    height: auto; /* Allow the header to grow as needed */
+  }
 
-    .social-media-icons ul {
-        flex-direction: row; /* Keeps icons in a row */
-        justify-content: center; /* Center the icons row */
-        margin: 14px 0 0 0; /* Add some space above and below the icons list */
-    }
+  .social-media-icons ul {
+    flex-direction: row; /* Keeps icons in a row */
+    justify-content: center; /* Center the icons row */
+    margin: 14px 0 0 0; /* Add some space above and below the icons list */
+  }
 }
 
 
@@ -179,45 +186,45 @@ p {
 /* SEÇÃO 2 */
 /* Hero */
 .hero {
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    padding: 14px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  padding: 14px 12px;
 }
 
 /* Texto do hero */
 .hero-text {
-    margin: 88px 0 0 0;
-    /* flex: 0 0 57%; */
-    padding: 0 12px;
-    width: 100%;
+  margin: 88px 0 0 0;
+  /* flex: 0 0 57%; */
+  padding: 0 12px;
+  width: 100%;
 }
 
 .hero-text h1, .hero-text p {
-    text-align: left;
+  text-align: left;
 }
 
 /* Imagem do hero */
 .hero img {
-    height: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: top;
-    padding: 63px 12px;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 63px 12px;
 }
 
 /* Hide .hero img on screens smaller than 1200px */
 @media (max-width: 1300px) {
-    .hero-text {
-        margin: 12px 0 0 0;
-        /* flex: 0 0 57%; */
-        padding: 0 12px;
-        width: 100%;
-    }
+  .hero-text {
+    margin: 12px 0 0 0;
+    /* flex: 0 0 57%; */
+    padding: 0 12px;
+    width: 100%;
+  }
 
-    .hero img {
-        display: none;
-    }
+  .hero img {
+    display: none;
+  }
 }
 
 /* ===================================================== */
@@ -226,83 +233,112 @@ p {
 /* SEÇÃO 2 */
 /* Video */
 .video-and-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    /* min-width: 320px; */
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  padding: 14px 0;
 }
 
 .video-container {
-    padding: 14px 0 24px 0;
-    width: 100%;
+  padding: 14px 0 24px 0;
+  width: 100%;
 }
 
 .aspect-ratio {
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.2%; /* The height of the item will now be 56.25% of the width. */
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.2%; /* The height of the item will now be 56.25% of the width. */
 }
 
 .aspect-ratio iframe {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    border: #3e60dd 2px solid;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border: #3e60dd 2px solid;
 }
 
 .video-and-button button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 14px 12px;
-    color: white;
-    background-color: #3e60dd;
-    font-family: 'Overpass Mono', monospace;
-    border-radius: 16px;
-    box-shadow: none;
-    width: 80%;
-    font-size: 1.5rem;
-    border: none;
+  padding: 14px 12px;
+  color: white;
+  background-color: #3e60dd;
+  font-family: 'Overpass Mono', monospace;
+  border-radius: 16px;
+  box-shadow: none;
+  width: 80%;
+  font-size: 1.5rem;
+  border: none;
+  height: auto;
+  text-align: center;
 }
 
 
+/* ===================================================== */
 
-/* SEÇÃO 2 */
+
+/* SEÇÃO 3 */
 /* Features */
 .features {
-    background: #3e60dd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 14px 80px;
+  background: #3e60dd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 80px;
 }
 
 .features .textbox {
-    padding: 14px 50px;
+  margin: 56px 10% 56px 10%;
+  padding: 14px 14px;
+  background-color: white;
+  border-radius: 16px;
+}
+
+.features .textbox p {
+  color: #3e60dd;
+  font-weight: 500;
+  margin: 0;
 }
 
 .features .feature-list {
-    padding: 0px 95px;
+  padding: 0px 95px;
 }
 
 .features .feature-list .list-point {
-    align-items: center;
-    vertical-align: middle;
-    display: flex;
-    flex-direction: row;
-    padding: 0 0 50px;
+  align-items: center;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 50px;
 }
 
 .features .feature-list .list-point p {
-    margin: 0 0 0 20px;
+  margin: 0 0 0 40px;
+  text-align: left;
 }
 
-/* SEÇÃO 3 */
+@media (max-width: 1300px) {
+  .features {
+    padding: 14px 40px;
+}
+
+.features .textbox {
+  padding: 14px 25px;
+}
+
+.features .feature-list {
+  padding: 0px 45px;
+}
+}
+
+
+/* ===================================================== */
+
+
+/* SEÇÃO 4 */
 /* Carousel */
 /* @keyframes tonext {
     75% {
@@ -534,30 +570,68 @@ p {
   } */
 
 
-/* About section */
-.section-container .about-itercode {
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 14px 80px;
+/* ===================================================== */
+
+
+/* SEÇÃO 5 */
+/* Advanced Features */
+
+.features .text-header {
+  margin: 56px 10% 56px 10%;
+  padding: 14px 14px;
 }
 
-.section-container .about-itercode p, .section-container .about-itercode h1 {
-    color: #3e60dd;
+
+/* ===================================================== */
+
+
+/* SEÇÃO 6 */
+/* Testimonials */
+
+
+/* ===================================================== */
+
+
+/* SEÇÃO 5 */
+/* About */
+.about-itercode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 80px;
+  margin: 48px 0;
 }
 
-/* Footer Styles */
+.about-itercode h1, .about-itercode p {
+  color: #3e60dd;
+  text-align: left;
+}
+
+.about-itercode h1 {
+  margin: 0 0 28px 0;
+}
+
+.about-itercode p {
+  margin: 28px 0 0 0;
+}
+
+
+/* ===================================================== */
+
+
+/* SEÇÃO 6 */
+/* Footer */
 footer {
-    background: #343a40;
-    color: #fff;
-    padding: 1rem 0;
-    text-align: center;
+  background: #3e60dd;
+  padding: 1rem 0;
+  text-align: center;
 }
-
-/* Additional classes for layout and typography can be added as needed. */
-
-
+footer p {
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin: 0;
+}
 
 
 

@@ -3,7 +3,7 @@
 @font-face {
 	font-family: 'Univers Condensed';
 	src: url('uc/uc.eot');
-	src: local('☺'), url('uc/uc.woff') format('woff'), url('uc/uc.ttf') format('truetype'), url('uc/uc.svg') format('svg'), url('uc/uc.eot?#iefix') format('embedded-opentype');
+	src: url('uc/uc.woff') format('woff'), url('uc/uc.ttf') format('truetype'), url('uc/uc.svg') format('svg'), url('uc/uc.eot?#iefix') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
@@ -11,7 +11,7 @@
 @font-face {
 	font-family: 'Univers Condensed';
 	src: url('uc/uc_bold.eot');
-	src: local('☺'), url('uc/uc_bold.woff') format('woff'), url('uc/uc_bold.ttf') format('truetype'), url('uc/uc_bold.svg') format('svg'), url('uc/uc_bold.eot?#iefix') format('embedded-opentype');
+	src: url('uc/uc_bold.woff') format('woff'), url('uc/uc_bold.ttf') format('truetype'), url('uc/uc_bold.svg') format('svg'), url('uc/uc_bold.eot?#iefix') format('embedded-opentype');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -26,6 +26,43 @@ body, h1, p {
 /* Definição de variáveis */
 :root {
   --itercode-blue: #3e60dd;
+}
+
+/* Topo da página */
+.page-top {
+  background-color: var(--itercode-blue);
+  background-image: url('../images/background-page-top.png');
+  background-size:auto;
+  background-position: top -1100px right 0px;
+  background-clip: border-box;
+}
+
+/* Janela menor no desktop */
+@media (max-width: 1300px) {
+  .page-top {
+    background-position: top -1100px right -200px;
+  }
+}
+
+/* Tamanho de tela médio (tablets, etc.) */
+@media (max-width: 768px) {
+  .page-top {
+    background-position: top -1300px right -300px;
+  }
+}
+
+/* Tamanho de tela pequeno (celulares largos, <= 600px) */
+@media (max-width: 600px) {
+  .page-top {
+    background-position: top -1300px right -400px;
+  }
+}
+
+/* Tamanho de tela extra pequeno (celulares pequenos, <= 400px) */
+@media (max-width: 400px) {
+  .page-top {
+    background-position: top -1300px right -500px;
+  }
 }
 
 /* Seções */
@@ -265,7 +302,7 @@ p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 63px 12px;
+  padding: 80px 12px;
 }
 
 .hero-text h1, .hero-text p {
@@ -281,9 +318,9 @@ p {
   display: block;
   justify-content: space-between;
   align-items: center;
-  padding: 63px 12px;
+  padding: 0 12px;
   height: auto;
-  width: 16vw;
+  /* width: 16vw; */
 }
 
 
@@ -717,7 +754,6 @@ p {
   padding: 14px 12px;
 }
 
-/* Texto do hero */
 .call-text {
   display: flex;
   flex-direction: column;
@@ -762,8 +798,6 @@ p {
   text-align: center;
 }
   
-  
-  
 @media (max-width: 1300px) {
   .call-to-test {
     flex-direction: column;
@@ -782,7 +816,7 @@ p {
   }
 
   .call-image img {
-    padding: 32px 0 32px 0;
+    padding: 32px 0 22px 0;
     width: 40%;
   }
 

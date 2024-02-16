@@ -497,6 +497,11 @@ p {
   height: 600px;
 }
 
+.slideshow-and-dots-container {
+  display: flex;
+  flex-direction: column;
+  margin: 52px 12px;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;

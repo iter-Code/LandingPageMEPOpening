@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
 
-@font-face {
+/* @font-face {
 	font-family: 'Univers Condensed';
 	src: url('fonts/uc.eot');
 	src: url('fonts/uc.woff') format('woff'), 
@@ -19,6 +19,22 @@
         url('fonts/uc_bold.ttf') format('truetype'), 
         url('fonts/uc_bold.svg') format('svg'), 
         url('fonts/uc_bold.eot?#iefix') format('embedded-opentype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+} */
+
+@font-face {
+	font-family: 'Univers Condensed';
+	src: url('fonts/UniversLTStd-LightCn TTF.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Univers Condensed';
+	src: url('fonts/univers-47-condensedlight-bold.ttf') format('truetype');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -739,22 +755,6 @@ p {
 
 /* SEÇÃO 6 */
 /* Advanced Features */
-
-.feature-list-and-image {
-  display: flex;
-}
-
-.feature-list-and-image .features-image {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  object-fit: contain;
-}
-
-.features-image img {
-  max-width: 100%;
-}
-
 .features .text-header {
   margin: 48px 10% 12px 10%;
   padding: 14px 12px 0 12px;
@@ -764,6 +764,29 @@ p {
   margin: 0;
 }
 
+.feature-list-and-image {
+  display: flex;
+  padding: 14px 12px;
+}
+
+.feature-list-and-image .features-image {
+  flex-basis: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  flex-shrink: 0.2;
+  flex-basis: 50%;
+}
+
+.features-image img {
+  max-width: 100%;
+}
+
+.feature-list-and-image .feature-list {
+  padding: 0 12px 0 32px;
+}
+
 @media (max-width: 1300px) {
   .features .text-header {
     margin: 32px 10% 12px 10%;
@@ -771,6 +794,11 @@ p {
 
   .feature-list-and-image {
     flex-direction: column-reverse;
+    margin-bottom: 32px;
+  }
+
+  .features-image img {
+    max-width: 70%;
   }
 
   .feature-list-and-image .hero-img img {

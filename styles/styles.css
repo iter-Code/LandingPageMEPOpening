@@ -333,7 +333,7 @@ p {
   .hero {
     margin: 0;
   }
-  
+
   .hero, .call-to-test {
     flex-direction: column;
   }
@@ -472,8 +472,15 @@ p {
 }
 
 .feature-list .list-point p {
-  margin: 0 0 0 40px;
+  margin: 0 0 0 30px;
   text-align: left;
+}
+
+.feature-list .list-point img {
+  max-width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 8px;
 }
 
 @media (max-width: 1300px) {
@@ -494,6 +501,13 @@ p {
   .feature-list .list-point p {
     margin: 0 0 0 25px;
     text-align: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .feature-list .list-point img {
+    max-width: 16px;
+    padding: 6px;
   }
 }
 
@@ -620,13 +634,13 @@ p {
 }
 
 .feature-list-and-image .features-image {
-  flex-basis: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
   object-fit: contain;
   flex-shrink: 0.2;
   flex-basis: 50%;
+  margin-right: 22px;
 }
 
 .features-image img {

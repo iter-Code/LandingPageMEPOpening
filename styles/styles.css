@@ -2,16 +2,23 @@
 
 @font-face {
 	font-family: 'Univers Condensed';
-	src: url('uc/uc.eot');
-	src: url('uc/uc.woff') format('woff'), url('uc/uc.ttf') format('truetype'), url('uc/uc.svg') format('svg'), url('uc/uc.eot?#iefix') format('embedded-opentype');
+	src: url('fonts/uc.eot');
+	src: url('fonts/uc.woff') format('woff'), 
+        url('fonts/uc.ttf') format('truetype'), 
+        url('fonts/uc.svg') format('svg'), 
+        url('fonts/uc.eot?#iefix') format('embedded-opentype');
 	font-weight: normal;
 	font-style: normal;
 	font-display: swap;
 }
+
 @font-face {
 	font-family: 'Univers Condensed';
-	src: url('uc/uc_bold.eot');
-	src: url('uc/uc_bold.woff') format('woff'), url('uc/uc_bold.ttf') format('truetype'), url('uc/uc_bold.svg') format('svg'), url('uc/uc_bold.eot?#iefix') format('embedded-opentype');
+	src: url('fonts/uc_bold.eot');
+	src: url('fonts/uc_bold.woff') format('woff'), 
+        url('fonts/uc_bold.ttf') format('truetype'), 
+        url('fonts/uc_bold.svg') format('svg'), 
+        url('fonts/uc_bold.eot?#iefix') format('embedded-opentype');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;

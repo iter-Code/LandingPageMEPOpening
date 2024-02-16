@@ -1,29 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@300..700&display=swap');
 
-/* @font-face {
-	font-family: 'Univers Condensed';
-	src: url('fonts/uc.eot');
-	src: url('fonts/uc.woff') format('woff'), 
-        url('fonts/uc.ttf') format('truetype'), 
-        url('fonts/uc.svg') format('svg'), 
-        url('fonts/uc.eot?#iefix') format('embedded-opentype');
-	font-weight: normal;
-	font-style: normal;
-	font-display: swap;
-}
-
-@font-face {
-	font-family: 'Univers Condensed';
-	src: url('fonts/uc_bold.eot');
-	src: url('fonts/uc_bold.woff') format('woff'), 
-        url('fonts/uc_bold.ttf') format('truetype'), 
-        url('fonts/uc_bold.svg') format('svg'), 
-        url('fonts/uc_bold.eot?#iefix') format('embedded-opentype');
-	font-weight: bold;
-	font-style: normal;
-	font-display: swap;
-} */
-
 @font-face {
 	font-family: 'Univers Condensed';
 	src: url('fonts/UniversLTStd-LightCn TTF.ttf') format('truetype');

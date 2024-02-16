@@ -25,6 +25,8 @@ body, h1, p {
 /* Definição de variáveis */
 :root {
   --itercode-blue: #3e60dd;
+  --white-button-hover: hsl(227, 70%, 48%);
+  --white-button-hover-text: white;
 }
 
 /* Topo da página */
@@ -67,7 +69,6 @@ body, h1, p {
 /* Seções */
 .section-container-transparent, .section-container-blue, .section-container-about, .section-hero, .section-advanced-features {
   display: flex;
-  border: 2px solid black;
   justify-content: center;
   align-items: center;
 }
@@ -143,7 +144,7 @@ p {
 }
 
 /* Janela menor no desktop */
-@media (max-width: 1300px) {
+@media (max-width: 1367px) {
   .section-container-transparent, .section-container-blue, .section-container-about, .section-hero, .section-advanced-features {
     padding-left: 15%;
     padding-right: 15%;
@@ -232,30 +233,30 @@ p {
 
 .social-media-icons li {
   margin-right: 10px;
-  padding: 0;
-  height: 50px;
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+  background-color: white;
+  padding: 8px;
+  border-radius: 50%;
+}
+
+.social-media-icons li[data-id="2"]{
+  height: 26px;
+  width: 26px;
+  padding: 10px;
 }
 
 .social-media-icons a {
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  position: relative;
-  overflow: hidden;
+  object-fit: contain;
 }
 
 .social-media-icons img {
   display: block;
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   object-fit: cover;
 }
-
-.social-media-icons ul li:hover {
-  background: white;
-  color: var(--itercode-blue);
-}
-
 
 /* Para mobile */
 @media (max-width: 600px) {
@@ -268,19 +269,11 @@ p {
   }
 
   .logo img {
-    max-height: 50px;
+    max-height: 58px;
     height: auto;
     width: auto;
     object-fit: contain;
     display: block;
-  }
-
-  .social-media-icons a {
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    position: relative;
-    overflow: hidden;
   }
 
   .social-media-icons ul {
@@ -290,8 +283,6 @@ p {
   }
 
   .social-media-icons li {
-    height: 30px;
-    padding: 0;
     margin: 0 5px;
   }
 }
@@ -339,6 +330,10 @@ p {
 
 
 @media (max-width: 1300px) {
+  .hero {
+    margin: 0;
+  }
+  
   .hero, .call-to-test {
     flex-direction: column;
   }
@@ -416,7 +411,22 @@ p {
   height: auto;
 }
 
+.video-and-button button:hover {
+  background-color: var(--white-button-hover);
+  cursor: pointer;
+}
+
+.video-and-button button:hover p {
+  background-color: var(--white-button-hover);
+  color: var(--white-button-hover-text);
+}
+
 @media (max-width: 768px) {
+  .video-and-button {
+    padding: 0;
+    margin: 0 0 22px 0;
+  }
+
   .video-and-button button {
     padding: 22px 12px;
   }
@@ -681,8 +691,18 @@ p {
   background-color: white;
 }
 
+.call-to-test button:hover {
+  background-color: var(--white-button-hover);
+  cursor: pointer;
+}
+
 .call-to-test button p {
   text-align: center;
+}
+
+.call-to-test button:hover p {
+  background-color: var(--white-button-hover);
+  color: var(--white-button-hover-text);
 }
   
 @media (max-width: 1300px) {

@@ -32,7 +32,7 @@ body, h1, p {
 /* Topo da página */
 .page-top {
   background-color: var(--itercode-blue);
-  /* background-image: url('../images/background-page-top2.png'); */
+  background-image: url('../images/background-page-top2.png');
   background-size:auto;
   background-position: top -900px right -400px;
   background-clip: border-box;
@@ -552,7 +552,7 @@ p {
   cursor: pointer;
   padding: 16px;
   font-size: 52px;
-  border: var(--itercode-blue) 4px solid;
+  border: var(--itercode-blue) 3px solid;
   border-radius: 50%;
   color: var(--itercode-blue);
   transition: 0.1s ease;
@@ -608,7 +608,7 @@ p {
     font-size: 36px;
     width: 16px;
     height: 16px;
-    border: var(--itercode-blue) 3px solid;
+    border: var(--itercode-blue) 2px solid;
   }
 
   .arrow-left{
@@ -626,11 +626,8 @@ p {
     font-size: 24px;
     width: 8px;
     height: 8px;
-    border: var(--itercode-blue) 2px solid;
   }
 }
-
-
 
 
 /* ===================================================== */

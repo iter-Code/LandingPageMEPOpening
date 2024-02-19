@@ -32,43 +32,34 @@ body, h1, p {
 /* Topo da página */
 .page-top {
   background-color: var(--itercode-blue);
-  background-image: url('../images/background-page-top2.png');
+  background-image: url('../images/background-page-top.png');
   background-size:auto;
-  background-position: top -900px right -400px;
+  background-position: top -2400px right -1500px;
   background-clip: border-box;
 }
 
 /* Janela menor no desktop */
 @media (max-width: 1920px) {
   .page-top {
-    background-position: top -900px right -400px;
+    background-position: top -2400px right -1600px;
+  }
+}
+
+@media (max-width: 1700px) {
+  .page-top {
+    background-position: top -2200px right -1800px;
   }
 }
 
 @media (max-width: 1300px) {
   .page-top {
-    background-position: top -1100px right -200px;
+    background-position: top -2300px right -2100px;
   }
 }
 
-/* Tamanho de tela médio (tablets, etc.) */
 @media (max-width: 768px) {
   .page-top {
-    background-position: top -1300px right -300px;
-  }
-}
-
-/* Tamanho de tela pequeno (celulares largos, <= 600px) */
-@media (max-width: 600px) {
-  .page-top {
-    background-position: top -1300px right -400px;
-  }
-}
-
-/* Tamanho de tela extra pequeno (celulares pequenos, <= 400px) */
-@media (max-width: 400px) {
-  .page-top {
-    background-position: top -1300px right -500px;
+    background-position: top -2550px right -2400px;
   }
 }
 

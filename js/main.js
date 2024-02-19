@@ -1,28 +1,38 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, carouselClass) {
+  showSlides(slideIndex[carouselClass] += n, carouselClass);
 }
 
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide(n, carouselClass) {
+  showSlides(slideIndex[carouselClass] = n, carouselClass);
 }
 
-function showSlides(n) {
+// Object to hold the slide index for each carousel
+let slideIndex = {};
+
+function showSlides(n, carouselClass) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  let carousel = document.querySelector('.' + carouselClass); // Find the specific carousel
+  let slides = carousel.getElementsByClassName("mySlides");
+  let dots = carousel.getElementsByClassName("dot");
+
+  // Initialize slideIndex for the carousel if it hasn't been already
+  if (!slideIndex[carouselClass]) slideIndex[carouselClass] = 1;
+
+  if (n > slides.length) {slideIndex[carouselClass] = 1}
+  if (n < 1) {slideIndex[carouselClass] = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+    slides[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
+  slides[slideIndex[carouselClass]-1].style.display = "block";  
+  dots[slideIndex[carouselClass]-1].className += " active";
 }
+
+// Initialize carousels
+document.addEventListener('DOMContentLoaded', (event) => {
+  // Assuming 'carousel-1' and 'carousel-2' are classes added to distinguish each carousel
+  showSlides(slideIndex['carousel-1'] = 1, 'carousel-1');
+  showSlides(slideIndex['carousel-2'] = 1, 'carousel-2');
+});

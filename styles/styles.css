@@ -889,24 +889,31 @@ p {
 }
 
 @media (max-width: 768px) {
+  .card {
+    padding: 22px 12px;
+  }
+
   .card .row {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
 
   .row label {
     width: 100%;
-    margin: 32px 32px 0 32px;
+    margin: 12px 0 0 0;
     text-align: center;
+    white-space: nowrap;
   }
 
   .row input, .row select{
     display: inline-block;
-    margin: 12px 12px;
+    margin: 12px 0;
     padding: 10px 30px;
     font-size: 18px;
     width: 80%;
     text-align: center;
+    min-width: none;
   }
 }
 

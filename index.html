@@ -70,7 +70,7 @@
                             allowfullscreen></iframe>
                     </div>
                 </div>
-                <button><p class="button-text-blue">INICIE SEU TESTE GRATUITO</p></button>
+                <button onClick="document.getElementById('buy-section').scrollIntoView({ behavior: 'smooth', block: 'center' });"><p class="button-text-blue">INICIE SEU TESTE GRATUITO</p></button>
             </div>
         </section>
     </section>
@@ -281,7 +281,7 @@
                 <p>Não perca mais tempo! Transforme a forma como você lida com projetos de furações - e ainda cobre por isso!</p>
                 <p>Comece o seu teste gratuito agora mesmo e tenha acesso ilimitado a todas as funcionalidades do MEP Opening por 30 dias.</p>
                 <p>Otimize seus projetos, economize tempo e alcance resultados excepcionais!</p>
-                <button><p class="button-text-white">COMECE AGORA!</p></button>
+                <button><p class="button-text-white" onClick="document.getElementById('buy-section').scrollIntoView({ behavior: 'smooth', block: 'center' });">COMECE AGORA!</p></button>
             </div>
             <div class="call-image">
                 <img src="images/award-icon.png" alt="MEP Opening Mock Image">
@@ -301,7 +301,7 @@
 
     <!-- Buy now Section -->
     <section class="section-container-blue">
-        <div class="buy-now">
+        <div class="buy-now" id="buy-section">
             <div class="card">
                 <div class="row">
                     <label>Plano a ser contratado</label>

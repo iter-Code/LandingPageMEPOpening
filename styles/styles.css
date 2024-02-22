@@ -802,7 +802,6 @@ p {
 }	
 
 .card {
-  /* margin-top: 30px; */
   margin-bottom: 30px;
   border-radius: 8px;
   background-color: transparent;
@@ -889,8 +888,13 @@ p {
 }
 
 @media (max-width: 768px) {
+  .buy-now {
+    margin: 48px 0;
+  }	
+
   .card {
-    padding: 22px 12px;
+    padding: 22px 0;
+    width: 100%;
   }
 
   .card .row {
@@ -903,13 +907,13 @@ p {
     width: 100%;
     margin: 12px 0 0 0;
     text-align: center;
-    white-space: nowrap;
+    max-width: none;
   }
 
   .row input, .row select{
     display: inline-block;
-    margin: 12px 0;
-    padding: 10px 30px;
+    margin: 12px 0 22px 0;
+    padding: 10px 0;
     font-size: 18px;
     width: 80%;
     text-align: center;

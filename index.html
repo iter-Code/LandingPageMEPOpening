@@ -300,69 +300,37 @@
     </section>
 
     <!-- Buy now Section -->
-    <!-- <section class="section-container-blue">
-        <div class="features">
-            <form>      
-                <input name="name" type="text" class="feedback-input" placeholder="Nome" />   
-                <input name="email" type="text" class="feedback-input" placeholder="E-mail" />
-                <input name="number" type="text" class="feedback-input" placeholder="Número de telefone" />
-                <input type="submit" value="ENVIAR"/>
-            </form>
-        </div>
-    </section> -->
-
-    <!-- Buy now Section -->
     <section class="section-container-blue">
         <div class="buy-now">
-            <div class="card__container">
-                <div class="card">
+            <div class="card">
+                <div class="row">
+                    <label>Plano a ser contratado</label>
+                    <select required id="plan">
+                        <option value="" disabled selected hidden>Selecione seu plano</option>
+                        <option value="1">1 mês - R$80,00</option>
+                        <option value="2">2 meses - R$160,00</option>
+                        <option value="3">3 meses - R$240,00</option>
+                        <option value="4">6 meses - R$480,00</option>
+                    </select>
+                </div>
 
-                    <div class="row number">
-                        <div class="info">
-                            <label for="expiry-date">Escolha seu plano</label>
-                            <select id="expiry-date">
-                                <option>Produto</option>
-                                <option value="1">1 mês - R$80,00</option>
-                                <option value="2">2 meses - R$160,00</option>
-                                <option value="3">3 meses - R$240,00</option>
-                                <option value="4">6 meses - R$480,00</option>
-                            </select>
+                <div class="row">
+                    <label>Nome</label>
+                    <input id="name" type="text" placeholder="Roberto Santos" />
+                </div>
 
-                            <span class="dropdown-el">
-                                <input type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance"><label for="sort-relevance">Relevance</label>
-                                <input type="radio" name="sortType" value="Popularity" id="sort-best"><label for="sort-best">Product Popularity</label>
-                                <input type="radio" name="sortType" value="PriceIncreasing" id="sort-low"><label for="sort-low">Price Low to High</label>
-                                <input type="radio" name="sortType" value="PriceDecreasing" id="sort-high"><label for="sort-high">Price High to Low</label>
-                                <input type="radio" name="sortType" value="ProductBrand" id="sort-brand"><label for="sort-brand">Product Brand</label>
-                                <input type="radio" name="sortType" value="ProductName" id="sort-name"><label for="sort-name">Product Name</label>
-                            </span>
-                        </div>
-                    </div>
+                <div class="row">
+                    <label>E-mail</label>
+                    <input id="email" type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="robertosantos@gmail.com"/>
+                </div>
 
-                    <div class="row number">
-                        <div class="info">
-                            <label for="cardholdername">Nome</label>
-                            <input placeholder="Roberto Santos" id="cardholdername" type="text" />
-                        </div>
-                    </div>
-
-                    <div class="row number">
-                        <div class="info">
-                            <label for="cardnumber">E-mail</label>
-                            <input id="cardnumber" type="e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="robertosantos@gmail.com"/>
-                        </div>
-                    </div>
-
-                    <div class="row number">
-                        <div class="info">
-                            <label for="cardnumber">Número de telefone</label>
-                            <input id="cardnumber" type="tel" pattern="[0-9]{16,19}" maxlength="14" placeholder="(51) 98234 4253"/>
-                        </div>
-                    </div>
-                    
+                <div class="row">
+                    <label>Número de telefone</label>
+                    <input id="telephone" type="tel" pattern="[0-9]{16,19}" maxlength="14" placeholder="(51) 98234 4253"/>
                 </div>
             </div>
-            <div class="button">
+
+            <div class="buy-button">
                 <button type="submit">Fazer o pedido</button>
             </div>
         </div>

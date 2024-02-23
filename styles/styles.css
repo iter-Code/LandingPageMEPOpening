@@ -839,6 +839,39 @@ p {
   width: 100%;
 }
 
+.autodesk-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 12px;
+  margin: 62px 0 32px 0;
+  max-width: 700px;
+  width: 100%;
+}
+
+.autodesk-option .buy-button a {
+  width: 100%;
+}
+
+.autodesk-option .buy-button button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 1px;
+  background-color: white;
+  border: none;
+  color: var(--itercode-blue);
+  padding: 18px;
+  border-radius: 5px;
+  outline: none;
+  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .buy-area {
     margin: 48px 0;
@@ -853,7 +886,7 @@ p {
   justify-content: center;
   align-items: center;
   padding: 14px 12px;
-  margin: 62px 0;
+  margin: 32px 0 62px 0;
   max-width: 700px;
   width: 100%;
 }	

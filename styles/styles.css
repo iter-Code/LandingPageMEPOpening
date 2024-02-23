@@ -476,6 +476,7 @@ p {
 
 .feature-list .list-point img {
   max-width: 20px;
+  max-height: 20px;
   background-color: white;
   border-radius: 50%;
   padding: 8px;
@@ -505,6 +506,7 @@ p {
 @media (max-width: 768px) {
   .feature-list .list-point img {
     max-width: 16px;
+    max-height: 16px;
     padding: 6px;
   }
 }
@@ -705,7 +707,7 @@ p {
   border-radius: 8px;
 }
 
-.carousel-1 .slideshow-and-dots-container .slideshow-container .mySlides img {
+.carousel-2 .slideshow-and-dots-container .slideshow-container .mySlides img {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -802,6 +804,34 @@ p {
 
 /* SEÇÃO 10 */
 /* Formulário */
+
+/* Parte que só existe na versão em inglês do site */
+.buy-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.autodesk-option {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 12px;
+  margin: 62px 0 0 0;
+  max-width: 700px;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .buy-area {
+    margin: 48px 0;
+  }
+}
+
+/* fim da parte que só existe no site em inglês */
+
 .buy-now {
   display: flex;
   flex-direction: column;
@@ -943,6 +973,9 @@ input:-webkit-autofill:active  {
     min-width: none;
   }
 }
+
+
+
 
 
 

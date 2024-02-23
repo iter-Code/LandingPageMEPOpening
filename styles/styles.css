@@ -539,6 +539,12 @@ p {
   display: none;
 }
 
+.carousel-1 .slideshow-and-dots-container .slideshow-container .mySlides img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -697,6 +703,12 @@ p {
 .carousel-2 .slideshow-and-dots-container .slideshow-container .mySlides {
   border: var(--itercode-blue) 2px solid;
   border-radius: 8px;
+}
+
+.carousel-1 .slideshow-and-dots-container .slideshow-container .mySlides img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 

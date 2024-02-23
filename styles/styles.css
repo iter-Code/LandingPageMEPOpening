@@ -221,6 +221,21 @@ p {
   display: block;
 }
 
+.select-language a {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+  padding: 12px 12px;
+  text-decoration: none;
+}
+
+.select-language a h1 {
+  margin: 0 0 0 12px;
+  font-size: 28px;
+  height: 100%;
+}
+
 .social-media-icons ul {
   display: flex;
   flex-direction: row;

@@ -847,6 +847,17 @@ p {
   width: 70%;
 }
 
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus,
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+  -webkit-box-shadow: 0 0 0 30px hsl(0, 0%, 100%) inset !important;
+  -webkit-text-fill-color: var(--itercode-blue);
+}
+
 .row input:focus, .row select:focus { 
   border: 3px solid hsl(227, 70%, 70%);
   outline: none;

@@ -852,6 +852,7 @@ p {
 
 .autodesk-option .buy-button a {
   width: 100%;
+  text-decoration: none;
 }
 
 .autodesk-option .buy-button button {

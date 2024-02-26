@@ -352,7 +352,7 @@ p {
 .hero-text, .call-text {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   justify-content: center;
   padding: 63px 12px;
 }
@@ -386,6 +386,7 @@ p {
   }
 
   .hero-text, .call-text {
+    align-items: center;
     padding: 12px 0;
     width: 100%;
   }

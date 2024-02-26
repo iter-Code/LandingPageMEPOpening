@@ -276,6 +276,13 @@ p {
   border-radius: 3px;
 }
 
+.languages {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .select-language a {
   display: flex;
   justify-content: center;
@@ -290,6 +297,7 @@ p {
   margin: 0 0 0 8px;
   font-size: 22px;
   height: 100%;
+  white-space: nowrap;
 }
 
 /* Para telas pequenas */
@@ -329,7 +337,7 @@ p {
   }
 
   .select-language a {
-    margin: 16px 0 0 0;
+    margin: 12px 8px 0 8px;
     padding: 0;
   }
 }

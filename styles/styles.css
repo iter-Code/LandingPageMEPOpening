@@ -900,7 +900,7 @@ p {
 
 @media (max-width: 768px) {
   .buy-area {
-    margin: 48px 0;
+    margin: 48px 0 0 0;
   }
 }
 
@@ -952,7 +952,6 @@ p {
 .row input, .row select {
   flex: 1;
   display: inline-block;
-  /* min-width: 245px; */
   margin: 32px 42px 32px 22px;
   padding: 10px 30px;
   background-color: white;
@@ -1047,10 +1046,6 @@ input:-webkit-autofill:active  {
     min-width: none;
   }
 }
-
-
-
-
 
 
 /* ===================================================== */

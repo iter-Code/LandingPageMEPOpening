@@ -227,38 +227,18 @@ p {
   align-items: center;
 }
 
-.select-language a {
-  display: flex;
-  justify-content: center;
-  align-items: end;
-  flex-direction: row;
-  padding: 12px 0;
-  text-decoration: none;
-  margin-right: 28px;
-}
-
-.select-language a h1 {
-  margin: 0 0 0 8px;
-  font-size: 22px;
-  height: 100%;
-}
-
-.vertical-bar {
-  border-left: 3px solid white;
-  height: 35px;
-  border-radius: 3px;
-}
-
 .social-media-icons ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin-left: 28px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 28px;
   padding: 0;
 }
 
 .social-media-icons li {
-  margin-right: 10px;
+  margin-left: 10px;
   height: 30px;
   width: 30px;
   object-fit: contain;
@@ -267,10 +247,16 @@ p {
   border-radius: 50%;
 }
 
+/* ícone do linkedin */
 .social-media-icons li[data-id="2"]{
   height: 26px;
   width: 26px;
   padding: 10px;
+}
+
+/* ícone do website */
+.social-media-icons li[data-id="4"]{
+  width: 31px;
 }
 
 .social-media-icons a {
@@ -282,6 +268,28 @@ p {
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
+}
+
+.vertical-bar {
+  border-left: 3px solid white;
+  height: 35px;
+  border-radius: 3px;
+}
+
+.select-language a {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+  padding: 12px 0;
+  text-decoration: none;
+  margin-left: 28px;
+}
+
+.select-language a h1 {
+  margin: 0 0 0 8px;
+  font-size: 22px;
+  height: 100%;
 }
 
 /* Para telas pequenas */
@@ -306,22 +314,23 @@ p {
     flex-direction: column;
   }
 
-  .select-language a {
-    margin: 2px 0;
+  .social-media-icons ul {
+    flex-direction: row;
+    justify-content: center;
+    margin: 18px 0;
+  }
+
+  .social-media-icons li {
+    margin: 0 5px;
   }
 
   .vertical-bar {
     display: none;
   }
 
-  .social-media-icons ul {
-    flex-direction: row;
-    justify-content: center;
-    margin: 0 0 0 0;
-  }
-
-  .social-media-icons li {
-    margin: 0 5px;
+  .select-language a {
+    margin: 16px 0 0 0;
+    padding: 0;
   }
 }
 
@@ -891,16 +900,31 @@ p {
   background-color: white;
   border: none;
   color: var(--itercode-blue);
-  padding: 18px;
+  padding: 32px 18px;
   border-radius: 5px;
   outline: none;
   transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   width: 100%;
 }
 
+.autodesk-option .buy-button button img {
+  margin-right: 18px;
+}
+
 @media (max-width: 768px) {
   .buy-area {
     margin: 48px 0 0 0;
+  }
+}
+
+@media (max-width: 460px) {
+  .autodesk-option .buy-button button {
+    padding: 32px 32px;
+  }
+
+  .autodesk-option .buy-button button img {
+    width: 60px;
+    height: 42px;
   }
 }
 
@@ -1015,7 +1039,7 @@ input:-webkit-autofill:active  {
 
 @media (max-width: 768px) {
   .buy-now {
-    margin: 48px 0;
+    margin: 24px 0 48px 0;
   }	
 
   .card {

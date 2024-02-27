@@ -43,12 +43,16 @@ function openImageModal(imgSrc) {
   const modalImg = document.getElementById("modalImage");
   modal.style.display = "block";
   modalImg.src = imgSrc;
+  // Disable scrolling on the background
+  document.body.style.overflow = 'hidden';
 }
 
 // Close the modal when the user clicks on <span> (x)
 function closeModal() {
   const modal = document.getElementById("imageModal");
   modal.style.display = "none";
+  // Re-enable scrolling on the background
+  document.body.style.overflow = 'auto';
 }
 
 // Add click event listener to all images inside the carousel to open them in the modal

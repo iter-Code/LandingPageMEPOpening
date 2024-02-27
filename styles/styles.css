@@ -587,25 +587,23 @@ p {
   margin: 52px 12px;
 }
 
-/* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
+/* Esconde as imagens como default */
 .mySlides {
   display: none;
 }
 
 .carousel-1 .slideshow-and-dots-container .slideshow-container .mySlides img {
   width: 100%;
-  height: auto;
+  height: 70vh;
   object-fit: contain;
 }
 
-/* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
   padding: 16px;
@@ -767,7 +765,7 @@ p {
 
 .carousel-2 .slideshow-and-dots-container .slideshow-container .mySlides img {
   width: 100%;
-  height: auto;
+  height: 70vh;
   object-fit: contain;
 }
 
@@ -1101,4 +1099,67 @@ footer p {
   footer {
     padding: 22px;
   }
+}
+
+
+/* ===================================================== */
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal Content (Image) - Updated for absolute centering */
+.modal-content {
+  position: absolute;
+  max-width: 90%;
+  max-height: 80%;
+  width: auto; /* Adjust width to be auto to respect max-width */
+  height: auto; /* Adjust height to be auto to respect max-height */
+  object-fit: contain; /* Ensures the aspect ratio is preserved */
+  /* Center the content */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }

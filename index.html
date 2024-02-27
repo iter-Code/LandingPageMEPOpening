@@ -168,23 +168,35 @@
 
                     <!-- Slides -->
                     <div class="mySlides fade">
-                        <img src="images/screens/Janela Revit.png" width="910" height="515">
+                        <img src="images/screens/3D_1.png" >
                     </div>
                 
                     <div class="mySlides fade">
-                        <img src="images/screens/Result 1.png" width="910" height="515">
+                        <img src="images/screens/3D_2.png" >
                     </div>
                 
                     <div class="mySlides fade">
-                        <img src="images/screens/Result 2.png" width="910" height="515">
+                        <img src="images/screens/3D_3.png" >
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="images/screens/Results 3.png" width="910" height="515">
+                        <img src="images/screens/3D_4.png" >
                     </div>
 
                     <div class="mySlides fade">
-                        <img src="images/screens/Visualização de furos.png" width="910" height="515">
+                        <img src="images/screens/1_pt-br.png" >
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/screens/2_pt-br.png" >
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/screens/3_pt-br.png" >
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/screens/4_pt-br.png" >
                     </div>
 
                 </div>
@@ -197,6 +209,9 @@
                     <span class="dot" onclick="currentSlide(3, 'carousel-1')"></span>
                     <span class="dot" onclick="currentSlide(4, 'carousel-1')"></span>
                     <span class="dot" onclick="currentSlide(5, 'carousel-1')"></span>
+                    <span class="dot" onclick="currentSlide(6, 'carousel-1')"></span>
+                    <span class="dot" onclick="currentSlide(7, 'carousel-1')"></span>
+                    <span class="dot" onclick="currentSlide(8, 'carousel-1')"></span>
                 </div>
             </div>
 
@@ -333,9 +348,9 @@
                     <select required id="plan" name="plan">
                         <option value="" disabled selected hidden>Selecione seu plano</option>
                         <option value="1 mês">1 mês - R$80,00</option>
-                        <option value="2 meses">2 meses - R$160,00</option>
-                        <option value="3 meses">3 meses - R$240,00</option>
-                        <option value="6 meses">6 meses - R$480,00</option>
+                        <option value="3 meses">3 meses - R$224,00</option>
+                        <option value="6 meses">6 meses - R$432,00</option>
+                        <option value="12 meses">12 meses - R$800,00</option>
                     </select>
                 </div>
 
@@ -365,7 +380,19 @@
     <footer>
         <p>© 2024 iterCode. Todos os direitos reservados.</p>
     </footer>
-
+    
+    <!-- The Modal -->
+    <div id="imageModal" class="modal">
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+        
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="modalImage">
+        
+        <!-- Modal Caption (Image Text) -->
+        <div id="caption"></div>
+    </div>
+    
     <script src="js/main.js"></script>
 </body>
 

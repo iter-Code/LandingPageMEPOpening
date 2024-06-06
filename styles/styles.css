@@ -770,6 +770,41 @@ p {
 
 /* SEÇÃO 7 */
 /* Testimonials */
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 20px;
+  margin-top: 10px;
+  padding: 0;
+}
+
+.testimonial-text {
+  color: var(--itercode-blue);
+  font-size: x-large;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.testimonial-name {
+  color: var(--itercode-blue);
+  font-size: x-large;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+}
+
+.testimonial-image {
+  pointer-events: none;
+  align-self: center;
+  max-width: 250px;
+  max-height: 100px;
+}
+
 .carousel .carousel-2 .slideshow-and-dots-container .slideshow-container {
   display: flex;
   justify-content: center;

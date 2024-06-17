@@ -464,7 +464,7 @@ p {
   display: flex;
   justify-content: center;
   align-content: center;
-  padding: 44px 12px;
+  padding: 44px;
   background-color: var(--itercode-blue);
   border-radius: 16px;
   box-shadow: none;
@@ -494,6 +494,9 @@ p {
   }
 }
 
+.video-and-button button.free-trial {
+  margin-bottom: 22px;
+}
 
 /* ===================================================== */
 

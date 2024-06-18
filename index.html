@@ -100,7 +100,7 @@
                     <p class="button-text-blue";>INICIE SEU TESTE GRATUITO</p>
                 </button>
 
-                <button onClick="document.getElementById('buy-section').scrollIntoView({ behavior: 'smooth', block: 'center' });">
+                <button onClick="document.getElementById('buy-section').scrollIntoView({ behavior: 'smooth', block: 'start' });">
                     <p class="button-text-blue">SOLICITE SUA LICENÇA</p>
                 </button>
 
@@ -364,10 +364,10 @@
     <!-- Buy now Section -->    
     <section class="section-container-blue">
         <div class="features">
-            <h1>Solicite sua licença do MEP Opening</h1>
+            <h1 id="buy-section">Solicite sua licença do MEP Opening</h1>
         <div>
 
-        <form action="https://formsubmit.co/formularios@itercode.com.br" method="POST" class="buy-now" id="buy-section">
+        <form action="https://formsubmit.co/formularios@itercode.com.br" method="POST" class="buy-now">
             <div class="card">
                 <div class="row">
                     <label>Plano a ser contratado</label>
